@@ -86,43 +86,58 @@ const StyledUl = styled.ul`
 
 export default function About(){
 
+    const [display, setDisplay] = useState();
+
+    function HandleHover(id){
+        setDisplay(id);
+    }
+
     return(
         <Main>
-            {QualityData && QualityData.map( quality =>{
-                return(
                 <>
                 <HoverDiv>
-                            <Quality id={quality.id} key={quality.id}>
-                                
-                                <Image
-                                    src="/test.png"
-                                    alt="Foto"
-                                    id="photo"
-                                    width="110px"
-                                    height="110px"
-                                />
-                                <StyledH3 style={ {color: quality.color} }>{quality.title}</StyledH3>
-                                <Description>{quality.content}</Description>
-                            </Quality>
-                </HoverDiv>
-                <SideDiv>
-                    <StyledH2 style={ {color: quality.color} }>{quality.title}</StyledH2>
-                    <BigDash style={ {backgroundColor: quality.color} }/>
-                    <SmallDash style={ {backgroundColor: quality.color} }/>
-                    {quality.particular && quality.particular.map(particular=>{
-                        return(
-                            <StyledUl>
-                                <li>{particular.l1}</li>
-                                <li>{particular.l2}</li>
-                                <li>{particular.l3}</li>
-                                <li>{particular.l4}</li>
-                            </StyledUl>
+                    {QualityData && QualityData.map( quality =>{
+                    return(
+                        <Quality id={quality.id} key={quality.id} onMouseEnter={_=>HandleHover(quality.id)}>
+                            <Image
+                                src="/test.png"
+                                alt="Foto"
+                                id="photo"
+                                width="110px"
+                                height="110px"
+                            />
+                            <StyledH3 style={ {color: quality.color} }>{quality.title}</StyledH3>
+                            <Description>{quality.content}</Description>
+                        </Quality>
                         )
                     })}
+                </HoverDiv>
+                <SideDiv>
+                    {QualityData && QualityData.map((quality, key)=>{
+                        return(
+                            <div key={key}>
+                            {display == quality.id && (
+                                <>
+                                    <StyledH2 style={ {color: quality.color} }>{quality.title}</StyledH2>
+                                    <BigDash style={ {backgroundColor: quality.color} }/>
+                                    <SmallDash style={ {backgroundColor: quality.color} }/>
+                                    {quality.particular && quality.particular.map((particular, key)=>{
+                                        return(
+                                            <StyledUl key={key}>
+                                                <li>{particular.l1}</li>
+                                                <li>{particular.l2}</li>
+                                                <li>{particular.l3}</li>
+                                                <li>{particular.l4}</li>
+                                            </StyledUl>
+                                        )
+                                    })}
+                                </>
+                            )}
+                            </div>
+                        )
+                    })} 
                 </SideDiv>
                 </>
-                )
-            })}
         </Main>
     )
 }
