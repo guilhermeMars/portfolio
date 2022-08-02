@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "title": "Qualidades",
+        "content": "Lorem ipsum dolor sit amet. Aut voluptate odio id ",
+        "color": "#11C518",
+        "particular": [{
+            "l1": "Lorem ipsum dolor sit amet. Eum quis nihil et fugit culpa aut",
+            "l2": "totam laboriosam est libero quasi aut harum ipsam. Et quia voluptatem",
+            "l3": "iste et nesciunt sint id exercitationem dolores. Qui magnam",
+            "l4": "inventore sed blanditiis perferendis ut laboriosam"
+        }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Formação",
+        "content": "Lorem ipsum dolor sit amet. Aut voluptate odio id ",
+        "color": "#5D6DFF",
+        "particular": [{
+            "l1": "Lorem ipsum dolor sit amet. Eum quis nihil et fugit culpa aut",
+            "l2": "totam laboriosam est libero quasi aut harum ipsam. Et quia voluptatem",
+            "l3": "iste et nesciunt sint id exercitationem dolores. Qui magnam",
+            "l4": "inventore sed blanditiis perferendis ut laboriosam"
+        }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Objetivos",
+        "content": "Lorem ipsum dolor sit amet. Aut voluptate odio id ",
+        "color": "#FF4D34",
+        "particular": [{
+            "l1": "Lorem ipsum dolor sit amet. Eum quis nihil et fugit culpa aut",
+            "l2": "totam laboriosam est libero quasi aut harum ipsam. Et quia voluptatem",
+            "l3": "iste et nesciunt sint id exercitationem dolores. Qui magnam",
+            "l4": "inventore sed blanditiis perferendis ut laboriosam"
+        }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Noções",
+        "content": "Lorem ipsum dolor sit amet. Aut voluptate odio id ",
+        "color": "#E9A800",
+        "particular": [{
+            "l1": "Lorem ipsum dolor sit amet. Eum quis nihil et fugit culpa aut",
+            "l2": "totam laboriosam est libero quasi aut harum ipsam. Et quia voluptatem",
+            "l3": "iste et nesciunt sint id exercitationem dolores. Qui magnam",
+            "l4": "inventore sed blanditiis perferendis ut laboriosam"
+        }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Skill's",
+        "content": "Lorem ipsum dolor sit amet. Aut voluptate odio id ",
+        "color": "#FF37F7",
+        "particular": [{
+            "l1": "Lorem ipsum dolor sit amet. Eum quis nihil et fugit culpa aut",
+            "l2": "totam laboriosam est libero quasi aut harum ipsam. Et quia voluptatem",
+            "l3": "iste et nesciunt sint id exercitationem dolores. Qui magnam",
+            "l4": "inventore sed blanditiis perferendis ut laboriosam"
+        }
+        ]
+    }
+]
