@@ -14,3 +14,25 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@keyframes slideUp{
+  0%{
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown{
+  0%{
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}

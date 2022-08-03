@@ -1,7 +1,8 @@
-import About from "../components/About";
 import Header from "../components/Header";
-import Project from "../components/Project";
 import Start from "../components/Start";
+import About from "../components/About";
+import Project from "../components/Project";
+import Courses from "../components/Courses"
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Start/>
       <About/>
       <Project/>
+      <Courses/>
     </>
   )
 }

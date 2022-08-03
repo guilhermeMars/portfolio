@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import Image from "next/image";
-import ProjectData from "../project.json";
+import CoursesData from "../courses.json";
 import { useState } from "react";
 
 const Main = styled.div`
-    margin: 70px auto 100px auto;
+    margin: 70px auto;
 `;
 
 const StyledH1 = styled.h1`
@@ -14,17 +14,57 @@ const StyledH1 = styled.h1`
     margin-bottom: 30px;
 `;
 
-const FlexProject = styled.div`
+const FlexCourse = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 `;
 
-const ProjectDivs = styled.div`
+const RelativeDiv = styled.div`
+    position: relative;
+`;
+
+const CourseDivs = styled.div`
     position: relative;
     overflow: hidden;
     width: 500px;
     margin: 20px;
+`;
+
+const TopCard = styled.i`
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    top: 40px;
+    left: 5px;
+    width: 280px;
+    height: 50px;
+    background-color: #914DFF;
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+    ::before{
+        content: "";
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        width: 15px;
+        height: 30px;
+        background-color: #482680;
+        border-radius: 20px 0 0 20px;
+        z-index: 2;
+    }
+`;
+
+const BlockDiv = styled.div`
+    height: 50px;
+    background-color: #914DFF;
+    position: relative;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    background: #914DFF;
 `;
 
 const HoverDiv = styled.div`
@@ -37,7 +77,7 @@ const HoverDiv = styled.div`
     bottom: 1%;
     right: 0;
     transition: 0.5s;
-    ${ProjectDivs}:hover & {
+    ${CourseDivs}:hover & {
         top: 15%;
         display: block;
     }
@@ -67,10 +107,10 @@ const StyledButton = styled.button`
     border-radius: 20px;
 `;
 
-export default function Project(){
+export default function Course(){
 
     const imagePerRow = 3;
-    const totalImg = ProjectData.length;
+    const totalImg = CoursesData.length;
     const [nextImg, setNextImg] = useState(imagePerRow);
 
     function handleMoreImage() {
@@ -83,25 +123,30 @@ export default function Project(){
 
     return(
         <Main>
-            <StyledH1>Projetos</StyledH1>
-            <FlexProject>
-                {ProjectData && ProjectData.slice(0, nextImg).map(project=>{
+            <StyledH1>Cursos</StyledH1>
+            <FlexCourse>
+                {CoursesData && CoursesData.slice(0, nextImg).map(course=>{
                     return(
-                        <ProjectDivs key={project.id} style={{ animationName: `slideDown`, animationDuration: '600ms' }}>
+                        <RelativeDiv key={course.id}>
+                        <CourseDivs style={{ animationName: `slideDown`, animationDuration: '600ms' }}>
                             <Image
-                                src={project.src}
-                                alt={project.title}
+                                src={course.src}
+                                alt={course.title}
                                 width="640"
                                 height="360"
-                            />
+                                />
                             <HoverDiv>
-                                <StyledH4>{project.title}</StyledH4>
-                                <StyledP>{project.description}</StyledP>
+                                <StyledH4>{course.title}</StyledH4>
+                                <StyledP>{course.description}</StyledP>
                             </HoverDiv>
-                        </ProjectDivs>
+                        </CourseDivs>
+                        {course.topCard !== "" &&
+                            <TopCard>{course.topCard}<BlockDiv/></TopCard>
+                        }
+                        </RelativeDiv>
                     )
                 })}
-            </FlexProject>
+            </FlexCourse>
             <Centralization>
                 {totalImg > nextImg &&
                     <StyledButton onClick={handleMoreImage}>Ver mais</StyledButton>

@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Qualidades",
+        "title": "Hard Skill's",
         "content": "Lorem ipsum dolor sit amet. Aut voluptate odio id ",
         "color": "#11C518",
         "particular": [{
@@ -53,7 +53,7 @@
     },
     {
         "id": 5,
-        "title": "Skill's",
+        "title": "Soft Skill's",
         "content": "Lorem ipsum dolor sit amet. Aut voluptate odio id ",
         "color": "#FF37F7",
         "particular": [{

@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "src": "/test gray.png",
+        "title": "Formação React",
+        "description": "Lorem ipsum dolor sit amet. Qui quia inventore aut eveniet tempora sit cupiditate aliquam sit asperiores voluptatem et consequatur illum?",
+        "topCard": "Alura",
+        "topColor": ""
+    },
+    {
+        "id": 2,
+        "src": "/test gray.png",
+        "title": "Técnico em Informática",
+        "description": "Lorem ipsum dolor sit amet. Qui quia inventore aut eveniet tempora sit cupiditate aliquam sit asperiores voluptatem et consequatur illum?",
+        "topCard": "",
+        "topColor": ""
+    },
+    {
+        "id": 3,
+        "src": "/test gray.png",
+        "title": "Inglês para Dev's",
+        "description": "Lorem ipsum dolor sit amet. Qui quia inventore aut eveniet tempora sit cupiditate aliquam sit asperiores voluptatem et consequatur illum?",
+        "topCard": "Em progresso",
+        "topColor": ""
+    },
+    {
+        "id": 4,
+        "src": "/test gray.png",
+        "title": "Node Js",
+        "description": "Lorem ipsum dolor sit amet. Qui quia inventore aut eveniet tempora sit cupiditate aliquam sit asperiores voluptatem et consequatur illum?",
+        "topCard": "Em progresso",
+        "topColor": ""
+    },
+    {
+        "id": 5,
+        "src": "/test gray.png",
+        "title": "Lorem",
+        "description": "Lorem ipsum dolor sit amet. Qui quia inventore aut eveniet tempora sit cupiditate aliquam sit asperiores voluptatem et consequatur illum?",
+        "topCard": "",
+        "topColor": ""
+    },
+    {
+        "id": 6,
+        "src": "/test gray.png",
+        "title": "Lorem",
+        "description": "Lorem ipsum dolor sit amet. Qui quia inventore aut eveniet tempora sit cupiditate aliquam sit asperiores voluptatem et consequatur illum?",
+        "topCard": "",
+        "topColor": ""
+    }
+]
