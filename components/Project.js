@@ -101,7 +101,7 @@ export default function Project(){
                                 height="360"
                             />
                             {(project.link != "") ? 
-                            <a href={project.link} target="_blank">
+                            <a href={project.link} target="_blank" rel="noreferrer">
                                 <HoverDiv>
                                     <StyledH4>{project.title}</StyledH4>
                                     <StyledP>{project.description}</StyledP>
