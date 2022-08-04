@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import Image from "next/image";
 import CoursesData from "../courses.json";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Main = styled.div`
     margin: 70px auto;
@@ -121,8 +123,12 @@ export default function Course(){
         setNextImg(nextImg - imagePerRow);
     }
 
+    useEffect(()=>{
+        Aos.init({ duration: 700 })
+    }, [])
+
     return(
-        <Main>
+        <Main data-aos="fade-up">
             <StyledH1>Cursos</StyledH1>
             <FlexCourse>
                 {CoursesData && CoursesData.slice(0, nextImg).map(course=>{

@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import Image from "next/image";
 import QualityData from "../quality.json";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Main = styled.div`
     position: relative;
@@ -73,7 +75,7 @@ const StyledH2 = styled.h2`
     font-size: 90px;
     margin: 0;
     margin-top: 20px;
-    color: #11C518;
+    color: black;
 `;
 
 const BigDash = styled.div`
@@ -102,10 +104,14 @@ export default function About(){
         setDisplay(id);
     }
 
+    useEffect(()=>{
+        Aos.init({ duration: 700 })
+    }, [])
+
     return(
         <Main>
             <WhiteTriangle/>
-            <HoverDiv>
+            <HoverDiv data-aos="fade-right">
                 {QualityData && QualityData.map( quality =>{
                 return(
                     <Quality id={quality.id} key={quality.id} onMouseEnter={_=>HandleHover(quality.id)}>
@@ -121,11 +127,13 @@ export default function About(){
                     )
                 })}
             </HoverDiv>
-            <SideDiv>
+            <SideDiv data-aos="fade-left">
                 {QualityData && QualityData.map((quality, key)=>{
                     return(
                         <div key={key}>
-                        {display == quality.id && (
+                        {(display == undefined) ?
+                            <StyledH2 style={{ marginBottom: "300px", textDecoration: "underline" }}>Escolha um tema</StyledH2>
+                         : display == quality.id && (
                             <div style={{ animationName: `slideUp`, animationDuration: '600ms'  }}>
                                 <StyledH2 style={ {color: quality.color} }>{quality.title}</StyledH2>
                                 <BigDash style={ {backgroundColor: quality.color} }/>

@@ -1,5 +1,8 @@
 import Image from "next/image";
 import styled from "styled-components";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Background = styled.div`
   background: linear-gradient(63.13deg, #482680 51.04%, #c099ff 51.05%);
@@ -62,11 +65,14 @@ const SocialImage = styled.div`
 `;
 
 export default function Start() {
+  useEffect(()=>{
+    Aos.init({ duration: 1000 })
+  }, [])
   return (
     <>
     <Background>
     <Main>
-      <Presentation>
+      <Presentation data-aos="fade-right">
         <StyledH2>Guilherme Martins Spiandorin</StyledH2>
         <StyledH1>Desenvolvedor Web Front-end</StyledH1>
         <StyledP>Júnior - Valinhos, Sp - Remoto/Híbrido</StyledP>
@@ -80,7 +86,7 @@ export default function Start() {
           height="600px"
         />
       </StyledMainImage>
-      <SocialMedia>
+      <SocialMedia data-aos="fade-left">
         <SocialImage>
           <Image src="/Linkedin.png" alt="Linkedin" width="500px" height="500px" />
         </SocialImage>
