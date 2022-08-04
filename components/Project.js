@@ -29,7 +29,7 @@ const ProjectDivs = styled.div`
 
 const HoverDiv = styled.div`
     position: absolute;
-    background-color: rgba(72, 38, 128, 0.8);
+    background-color: rgba(72, 38, 128, 0.9);
     color: white;
     padding: 20px;
     top: 100%;
@@ -94,10 +94,19 @@ export default function Project(){
                                 width="640"
                                 height="360"
                             />
+                            {(project.link != "") ? 
+                            <a href={project.link} target="_blank">
+                                <HoverDiv>
+                                    <StyledH4>{project.title}</StyledH4>
+                                    <StyledP>{project.description}</StyledP>
+                                </HoverDiv>
+                            </a>
+                            :
                             <HoverDiv>
                                 <StyledH4>{project.title}</StyledH4>
                                 <StyledP>{project.description}</StyledP>
                             </HoverDiv>
+                            }
                         </ProjectDivs>
                     )
                 })}

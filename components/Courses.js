@@ -69,7 +69,7 @@ const BlockDiv = styled.div`
 
 const HoverDiv = styled.div`
     position: absolute;
-    background-color: rgba(72, 38, 128, 0.8);
+    background-color: rgba(72, 38, 128, 0.9);
     color: white;
     padding: 20px;
     top: 100%;

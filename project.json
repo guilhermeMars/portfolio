@@ -1,38 +1,44 @@
 [
     {
         "id": 1,
-        "src": "/test gray.png",
+        "src": "/las-cio.webp",
         "title": "Las-cio Freelance",
-        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur."
+        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur.",
+        "link": "https://www.las-cio.com"
     },
     {
         "id": 2,
-        "src": "/test gray.png",
+        "src": "/Tcc-Tumb.webp",
         "title": "DotX - TCC",
-        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur."
+        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur.",
+        "link": "https://www.youtube.com/watch?v=-BEkblWzyVQ"
     },
     {
         "id": 3,
-        "src": "/test gray.png",
+        "src": "/projetoHelloUser.webp",
         "title": "Hello User - Projeto React",
-        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur."
+        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur.",
+        "link": "https://hello-user-portfolio.vercel.app"
     },
     {
         "id": 4,
         "src": "/test gray.png",
         "title": "Lorem",
-        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur."
+        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur.",
+        "link": ""
     },
     {
         "id": 5,
         "src": "/test gray.png",
         "title": "Lorem",
-        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur."
+        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur.",
+        "link": ""
     },
     {
         "id": 6,
         "src": "/test gray.png",
         "title": "Lorem",
-        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur."
+        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur.",
+        "link": ""
     }
 ]

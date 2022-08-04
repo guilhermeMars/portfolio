@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "src": "/test gray.png",
+        "src": "/certificadoReact.webp",
         "title": "Formação React",
         "description": "Lorem ipsum dolor sit amet. Qui quia inventore aut eveniet tempora sit cupiditate aliquam sit asperiores voluptatem et consequatur illum?",
         "topCard": "Alura",
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "src": "/test gray.png",
+        "src": "/cursoInformatica.webp",
         "title": "Técnico em Informática",
         "description": "Lorem ipsum dolor sit amet. Qui quia inventore aut eveniet tempora sit cupiditate aliquam sit asperiores voluptatem et consequatur illum?",
         "topCard": "",
@@ -17,15 +17,15 @@
     },
     {
         "id": 3,
-        "src": "/test gray.png",
+        "src": "/inglêsParaDevs.webp",
         "title": "Inglês para Dev's",
         "description": "Lorem ipsum dolor sit amet. Qui quia inventore aut eveniet tempora sit cupiditate aliquam sit asperiores voluptatem et consequatur illum?",
         "topCard": "Em progresso",
-        "topColor": ""
+        "topColor": "#F5EF3B"
     },
     {
         "id": 4,
-        "src": "/test gray.png",
+        "src": "/cursoNodeJs.webp",
         "title": "Node Js",
         "description": "Lorem ipsum dolor sit amet. Qui quia inventore aut eveniet tempora sit cupiditate aliquam sit asperiores voluptatem et consequatur illum?",
         "topCard": "Em progresso",
