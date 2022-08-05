@@ -156,10 +156,10 @@ export default function Course(){
             </FlexCourse>
             <Centralization>
                 {totalImg > nextImg &&
-                    <StyledButton onClick={handleMoreImage}>Ver mais</StyledButton>
+                    <StyledButton onClick={handleMoreImage}>Ver mais <img src="/Arrow.png" /></StyledButton>
                 }
                 {totalImg <= nextImg &&
-                    <StyledButton onClick={handleLessImage}>Ver menos</StyledButton>
+                    <StyledButton onClick={handleLessImage}>Ver menos <img src="/Arrow.png" style={{ transform: "rotate(180deg)" }}/></StyledButton>
                 }
             </Centralization>
         </Main>
