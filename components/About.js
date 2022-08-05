@@ -37,7 +37,7 @@ const Quality = styled.a`
     border-radius: 5px;
     width: 230px;
     height: 300px;
-    padding: 15px;
+    padding: 20px 15px;
     margin: 20px;
     transition: 0.3s;
     cursor: pointer;
@@ -45,6 +45,10 @@ const Quality = styled.a`
         transform: translateY(-15px);
     }
 `;
+
+const ImageAlign = styled.div`
+    text-align: center;
+`
 
 const StyledH3 = styled.h3`
     font-size: 30px;
@@ -114,13 +118,15 @@ export default function About(){
             <HoverDiv data-aos="fade-right">
                 {QualityData && QualityData.map( quality =>{
                 return(
-                    <Quality id={quality.id} key={quality.id} onMouseEnter={_=>HandleHover(quality.id)}>
-                        <Image
-                            src="/test.png"
-                            alt="Foto"
-                            width="110px"
-                            height="110px"
-                        />
+                    <Quality key={quality.id} onMouseEnter={_=>HandleHover(quality.id)}>
+                        <ImageAlign>
+                            <Image
+                                src={quality.src}
+                                alt={quality.title}
+                                width="100px"
+                                height="100px"
+                            />
+                        </ImageAlign>
                         <StyledH3 style={ {color: quality.color} }>{quality.title}</StyledH3>
                         <Description>{quality.content}</Description>
                     </Quality>

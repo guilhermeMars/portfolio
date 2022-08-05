@@ -3,6 +3,7 @@
         "id": 1,
         "title": "Hard Skill's",
         "content": "Lorem ipsum dolor sit amet. Aut voluptate odio id ",
+        "src": "/HardSkill.svg",
         "color": "#11C518",
         "particular": [{
             "l1": "Lorem ipsum dolor sit amet. Eum quis nihil et fugit culpa aut",
@@ -16,6 +17,7 @@
         "id": 2,
         "title": "Formação",
         "content": "Lorem ipsum dolor sit amet. Aut voluptate odio id ",
+        "src": "/Formacao.svg",
         "color": "#5D6DFF",
         "particular": [{
             "l1": "Lorem ipsum dolor sit amet. Eum quis nihil et fugit culpa aut",
@@ -29,6 +31,7 @@
         "id": 3,
         "title": "Objetivos",
         "content": "Lorem ipsum dolor sit amet. Aut voluptate odio id ",
+        "src": "/Objetivos.svg",
         "color": "#FF4D34",
         "particular": [{
             "l1": "Lorem ipsum dolor sit amet. Eum quis nihil et fugit culpa aut",
@@ -42,6 +45,7 @@
         "id": 4,
         "title": "Noções",
         "content": "Lorem ipsum dolor sit amet. Aut voluptate odio id ",
+        "src": "/Nocoes.svg",
         "color": "#E9A800",
         "particular": [{
             "l1": "Lorem ipsum dolor sit amet. Eum quis nihil et fugit culpa aut",
@@ -55,6 +59,7 @@
         "id": 5,
         "title": "Soft Skill's",
         "content": "Lorem ipsum dolor sit amet. Aut voluptate odio id ",
+        "src": "/SoftSkill.svg",
         "color": "#FF37F7",
         "particular": [{
             "l1": "Lorem ipsum dolor sit amet. Eum quis nihil et fugit culpa aut",

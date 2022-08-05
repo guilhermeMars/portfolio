@@ -107,6 +107,7 @@ const StyledButton = styled.button`
     width: 250px;
     border: none;
     border-radius: 20px;
+    cursor: pointer;
 `;
 
 export default function Course(){
@@ -128,7 +129,7 @@ export default function Course(){
     }, [])
 
     return(
-        <Main data-aos="fade-up">
+        <Main data-aos="fade-up" data-aos-delay="50">
             <StyledH1>Cursos</StyledH1>
             <FlexCourse>
                 {CoursesData && CoursesData.slice(0, nextImg).map(course=>{
