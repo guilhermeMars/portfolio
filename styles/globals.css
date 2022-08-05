@@ -15,7 +15,7 @@ a {
   box-sizing: border-box;
 }
 
-@keyframes slideUp{
+@keyframes slideLeft{
   0%{
     transform: translateX(50%);
     opacity: 0;
@@ -28,11 +28,23 @@ a {
 
 @keyframes slideDown{
   0%{
-    transform: translateY(30%);
+    transform: translateY(-30%);
     opacity: 0;
   }
   100%{
     transform: translateX(0%);
     opacity: 1;
   }
+}
+
+body::-webkit-scrollbar{
+  width: 11px;
+}
+
+body::-webkit-scrollbar-track{
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: var(--primary_color);
 }

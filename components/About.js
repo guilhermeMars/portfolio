@@ -140,7 +140,7 @@ export default function About(){
                         {(display == undefined) ?
                             <StyledH2 style={{ marginBottom: "300px", textDecoration: "underline" }}>Escolha um tema</StyledH2>
                          : display == quality.id && (
-                            <div style={{ animationName: `slideUp`, animationDuration: '600ms'  }}>
+                            <div style={{ animationName: `slideLeft`, animationDuration: '600ms'  }}>
                                 <StyledH2 style={ {color: quality.color} }>{quality.title}</StyledH2>
                                 <BigDash style={ {backgroundColor: quality.color} }/>
                                 <SmallDash style={ {backgroundColor: quality.color} }/>
