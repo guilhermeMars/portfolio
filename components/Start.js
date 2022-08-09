@@ -4,14 +4,17 @@ import { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+const maxWd = "520px"
+
 const Background = styled.div`
   background: linear-gradient(63.13deg, #482680 51.04%, #c099ff 51.05%);
 `;
 
 const Main = styled.main`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  max-width: 1800px;
+  max-width: 180vh;
   align-items: center;
   padding: 150px 0 70px 0;
   color: white;
@@ -19,30 +22,54 @@ const Main = styled.main`
 `;
 
 const Presentation = styled.div`
-  flex: 1 1 0px;
+  max-width: ${maxWd};
+  margin-right: 10px;
+  flex: 1;
+  @media only screen and (max-width: 600px) {
+    margin: 0 10px;
+  }
 `;
 
 const StyledH2 = styled.h2`
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   margin: 0;
+  
 `;
 
 const StyledH1 = styled.h1`
-  font-size: 60px;
+  font-size: 55px;
   line-height: 80px;
   margin: 0;
+  @media only screen and (max-width: 600px) {
+    font-size: 45px;
+  }
 `;
 
 const StyledP = styled.p`
-  font-size: 20px;
+  font-size: 18px;
   margin: 10px 0;
   font-weight: 400;
 `;
 
+const FlexMainImage = styled.div`
+  max-width: ${maxWd};
+  flex: 1;
+`;
+
 const StyledMainImage = styled.div`
-  max-width: 700px;
-  flex: 1 1 0px;
+  text-align: center;
+  margin: auto;
+  width: 500px;
+  @media only screen and (max-width: 600px) {
+    width: 350px;
+    margin: 60px auto;
+  }
+`;
+
+const SocialFlex = styled.div`
+  max-width: ${maxWd};
+  flex: 1;
 `;
 
 const SocialMedia = styled.div`
@@ -52,11 +79,17 @@ const SocialMedia = styled.div`
   align-items: center;
   padding: 20px;
   height: 560px;
-  width: 524px;
-  margin-left: 50px;
-  margin-right: 30px;
+  min-width: 400px;
+  max-width: 500px;
+  margin: 0 30px;
   background-color: white;
   border-radius: 10px;
+  @media only screen and (max-width: 430px) {
+    min-width: 0;
+    width: 300px;
+    margin: auto;
+    padding: 0;
+  }
 `;
 
 const SocialImage = styled.a`
@@ -67,10 +100,13 @@ const SocialImage = styled.a`
     width: 150px;
     cursor: pointer;
   }
+  @media only screen and (max-width: 430px) {
+    width: 120px;;
+  }
 `;
 
 const StyledEmail = styled.p`
-  font-size: 30px;
+  font-size: 22px;
   text-align: center;
   font-weight: bold;
   color: black;
@@ -87,7 +123,7 @@ export default function Start() {
   }, [])
   return (
     <>
-    <Background>
+    <Background id="inicio">
     <Main>
       <Presentation data-aos="fade-right">
         <StyledH2>Guilherme Martins Spiandorin</StyledH2>
@@ -95,39 +131,43 @@ export default function Start() {
         <StyledP>Júnior - Valinhos, Sp - Remoto/Híbrido</StyledP>
       </Presentation>
       
-      <StyledMainImage>
-        <Image
-          src="/test.png"
-          alt="Minha foto"
-          id="photo"
-          width="600px"
-          height="600px"
-        />
-      </StyledMainImage>
-
-      <SocialMedia data-aos="fade-left">
-        <SocialImage href="https://www.linkedin.com/in/guilherme-martins-216a43207/" target="_blank" rel="noreferrer">
-          <Image src="/Linkedin.png" alt="Linkedin" width="500px" height="500px" />
-        </SocialImage>
-        <SocialImage href="https://github.com/guilhermeMars" target="_blank" rel="noreferrer">
-          <Image src="/Github.png" alt="Github" width="500px" height="500px" />
-        </SocialImage>
-        <SocialImage href="https://www.instagram.com/stars_fade/" target="_blank" rel="noreferrer">
+      <FlexMainImage>
+        <StyledMainImage>
           <Image
-            src="/Instagram.png"
-            alt="Instagram"
-            width="500px"
-            height="500px"
+            src="/test.png"
+            alt="Minha foto"
+            id="photo"
+            width="600px"
+            height="600px"
           />
-        </SocialImage>
-        <SocialImage href="https://twitter.com/Stars_Fadee" target="_blank" rel="noreferrer">
-          <Image src="/Twitter.png" alt="Twitter" width="500px" height="500px" />
-        </SocialImage>
-        <SocialImage>
-          <Image src="/Gmail.png" alt="Gmail" width="280px" height="210px" onClick={()=> (displayText == false) ? setDisplayText(true) : setDisplayText(false)} />
-        </SocialImage>
-          {displayText && <StyledEmail>guilhermemspiandorin@gmail.com</StyledEmail> }
-      </SocialMedia>
+        </StyledMainImage>
+      </FlexMainImage>
+
+      <SocialFlex>
+        <SocialMedia data-aos="fade-left">
+          <SocialImage href="https://www.linkedin.com/in/guilherme-martins-216a43207/" target="_blank" rel="noreferrer">
+            <Image src="/Linkedin.png" alt="Linkedin" width="500px" height="500px" />
+          </SocialImage>
+          <SocialImage href="https://github.com/guilhermeMars" target="_blank" rel="noreferrer">
+            <Image src="/Github.png" alt="Github" width="500px" height="500px" />
+          </SocialImage>
+          <SocialImage href="https://www.instagram.com/stars_fade/" target="_blank" rel="noreferrer">
+            <Image
+              src="/Instagram.png"
+              alt="Instagram"
+              width="500px"
+              height="500px"
+            />
+          </SocialImage>
+          <SocialImage href="https://twitter.com/Stars_Fadee" target="_blank" rel="noreferrer">
+            <Image src="/Twitter.png" alt="Twitter" width="500px" height="500px" />
+          </SocialImage>
+          <SocialImage>
+            <Image src="/Gmail.png" alt="Gmail" width="280px" height="210px" onClick={()=> (displayText == false) ? setDisplayText(true) : setDisplayText(false)} />
+          </SocialImage>
+            {displayText && <StyledEmail>guilhermemspiandorin@gmail.com</StyledEmail> }
+        </SocialMedia>
+      </SocialFlex>
     </Main>
     </Background>
     </>

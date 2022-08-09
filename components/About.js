@@ -9,6 +9,7 @@ const Main = styled.div`
     position: relative;
     background-image: linear-gradient(#785AAB, #241340);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 70px 0;
     justify-content: center;
@@ -21,6 +22,9 @@ const WhiteTriangle = styled.div`
     width: 200px;
     bottom: 0; left: 0;
     clip-path: polygon(0 0, 0% 100%, 67% 100%);
+    @media only screen and (max-width: 780px) {
+        display: none;
+    }
 `;
 
 const HoverDiv = styled.div`
@@ -28,15 +32,15 @@ const HoverDiv = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 1000px;
+    width: 750px;
 `;
 
 const Quality = styled.a`
     background-color: #482680;
     border: 3px solid #AD7BFF;
     border-radius: 5px;
-    width: 230px;
-    height: 300px;
+    width: 200px;
+    height: 280px;
     padding: 20px 15px;
     margin: 20px;
     transition: 0.3s;
@@ -68,11 +72,15 @@ const Description = styled.p`
 const SideDiv = styled.div`
     background-color: white;
     border-radius: 30px;
-    margin-right: 100px;
-    width: 700px;
+    width: 600px;
     height: 600px;
     padding: 30px;
     overflow: hidden;
+    @media only screen and (max-width: 630px) {
+        width: 350px;
+        padding: 15px;
+        height: 500px;
+    }
 `;
 
 const StyledH2 = styled.h2`
@@ -80,12 +88,18 @@ const StyledH2 = styled.h2`
     margin: 0;
     margin-top: 20px;
     color: black;
+    @media only screen and (max-width: 630px) {
+        font-size: 50px;
+    }
 `;
 
 const BigDash = styled.div`
     background-color: #11C518;
     width: 500px;
     height: 8px;
+    @media only screen and (max-width: 630px) {
+        width: 300px;
+    }
 `;
 
 const SmallDash = styled.div`
@@ -93,16 +107,33 @@ const SmallDash = styled.div`
     width: 300px;
     height: 5px;
     margin-top: 10px;
+    @media only screen and (max-width: 630px) {
+        width: 200px;
+    }
 `;
 
 const StyledUl = styled.ul`
     margin-top: 30px;
     font-size: 25px;
+    @media only screen and (max-width: 630px) {
+        font-size: 20px;
+        li {
+            margin-top: 10px;
+        }
+    }
 `;
 
 export default function About(){
 
     const [display, setDisplay] = useState();
+
+    function handleWidth() {
+            if(window.screen.width > 630){
+                return "fade-left";
+            } else{
+                return undefined;
+            }
+    }
 
     function HandleHover(id){
         setDisplay(id);
@@ -113,7 +144,7 @@ export default function About(){
     }, [])
 
     return(
-        <Main>
+        <Main id="sobre">
             <WhiteTriangle/>
             <HoverDiv data-aos="fade-right">
                 {QualityData && QualityData.map( quality =>{
@@ -133,7 +164,8 @@ export default function About(){
                     )
                 })}
             </HoverDiv>
-            <SideDiv data-aos="fade-left">
+            {/*data-aos={(@media only screen and (max-width: 630)) ? "" : "fade-left"}*/}
+            <SideDiv data-aos={(typeof window !== "undefined") && (window.screen.width > 640) ? "fade-left" : undefined}>
                 {QualityData && QualityData.map((quality, key)=>{
                     return(
                         <div key={key}>

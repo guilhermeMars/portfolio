@@ -11,9 +11,12 @@ const Main = styled.div`
 
 const StyledH1 = styled.h1`
     text-align: center;
-    font-size: 110px;
+    font-size: 100px;
     margin: 0;
     margin-bottom: 30px;
+    @media only screen and (max-width: 430px) {
+        font-size: 80px;
+    }
 `;
 
 const FlexCourse = styled.div`
@@ -29,8 +32,12 @@ const RelativeDiv = styled.div`
 const CourseDivs = styled.div`
     position: relative;
     overflow: hidden;
-    width: 500px;
+    width: 430px;
     margin: 20px;
+    @media only screen and (max-width: 600px) {
+        width: 390px;
+        margin: 20px 0;
+    }
 `;
 
 const TopCard = styled.i`
@@ -86,12 +93,12 @@ const HoverDiv = styled.div`
 `;
 
 const StyledH4 = styled.h4`
-    font-size: 40px;
+    font-size: 35px;
     margin: 0;
 `;
 
 const StyledP = styled.p`
-    font-size: 20px;
+    font-size: 18px;
 `;
 
 const Centralization = styled.div`
@@ -101,10 +108,10 @@ const Centralization = styled.div`
 const StyledButton = styled.button`
     background-color: #914DFF;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     padding: 10px;
-    width: 250px;
+    width: 220px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -129,7 +136,7 @@ export default function Course(){
     }, [])
 
     return(
-        <Main data-aos="fade-up" data-aos-delay="50">
+        <Main data-aos="fade-up" data-aos-delay="50" id="cursos">
             <StyledH1>Cursos</StyledH1>
             <FlexCourse>
                 {CoursesData && CoursesData.slice(0, nextImg).map(course=>{

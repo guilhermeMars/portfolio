@@ -11,9 +11,12 @@ const Main = styled.div`
 
 const StyledH1 = styled.h1`
     text-align: center;
-    font-size: 110px;
+    font-size: 100px;
     margin: 0;
     margin-bottom: 30px;
+    @media only screen and (max-width: 430px) {
+        font-size: 80px;
+    }
 `;
 
 const FlexProject = styled.div`
@@ -25,8 +28,12 @@ const FlexProject = styled.div`
 const ProjectDivs = styled.div`
     position: relative;
     overflow: hidden;
-    width: 500px;
+    width: 430px;
     margin: 20px;
+    @media only screen and (max-width: 600px) {
+        width: 390px;
+        margin: 20px 0;
+    }
 `;
 
 const HoverDiv = styled.div`
@@ -46,12 +53,12 @@ const HoverDiv = styled.div`
 `;
 
 const StyledH4 = styled.h4`
-    font-size: 40px;
+    font-size: 35px;
     margin: 0;
 `;
 
 const StyledP = styled.p`
-    font-size: 20px;
+    font-size: 18px;
 `;
 
 const Centralization = styled.div`
@@ -61,10 +68,10 @@ const Centralization = styled.div`
 const StyledButton = styled.button`
     background-color: #914DFF;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     padding: 10px;
-    width: 250px;
+    width: 220px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -90,7 +97,7 @@ export default function Project(){
 
     return(
         <Main data-aos="fade-up" data-aos-delay="50">
-            <StyledH1>Projetos</StyledH1>
+            <StyledH1 id="projetos">Projetos</StyledH1>
             <FlexProject>
                 {ProjectData && ProjectData.slice(0, nextImg).map(project=>{
                     return(
