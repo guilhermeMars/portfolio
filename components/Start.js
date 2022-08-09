@@ -146,21 +146,21 @@ export default function Start() {
       <SocialFlex>
         <SocialMedia data-aos="fade-left">
           <SocialImage href="https://www.linkedin.com/in/guilherme-martins-216a43207/" target="_blank" rel="noreferrer">
-            <Image src="/Linkedin.png" alt="Linkedin" width="500px" height="500px" />
+            <Image src="/Linkedin.png" alt="Linkedin" width="200px" height="200px" />
           </SocialImage>
           <SocialImage href="https://github.com/guilhermeMars" target="_blank" rel="noreferrer">
-            <Image src="/Github.png" alt="Github" width="500px" height="500px" />
+            <Image src="/Github.png" alt="Github" width="200px" height="200px" />
           </SocialImage>
           <SocialImage href="https://www.instagram.com/stars_fade/" target="_blank" rel="noreferrer">
             <Image
               src="/Instagram.png"
               alt="Instagram"
-              width="500px"
-              height="500px"
+              width="200px"
+              height="200px"
             />
           </SocialImage>
           <SocialImage href="https://twitter.com/Stars_Fadee" target="_blank" rel="noreferrer">
-            <Image src="/Twitter.png" alt="Twitter" width="500px" height="500px" />
+            <Image src="/Twitter.png" alt="Twitter" width="200px" height="200px" />
           </SocialImage>
           <SocialImage>
             <Image src="/Gmail.png" alt="Gmail" width="280px" height="210px" onClick={()=> (displayText == false) ? setDisplayText(true) : setDisplayText(false)} />
