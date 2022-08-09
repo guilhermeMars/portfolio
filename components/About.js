@@ -128,21 +128,12 @@ export default function About(){
 
     const [display, setDisplay] = useState();
 
-    const [sideTransition, setSideTransition] = useState();
-
-    useEffect(()=>{
-        if (typeof window !== 'undefined') {
-            if(window.screen.width > 640) setSideTransition("fade-left");
-            else setSideTransition(undefined);
-        }
-    }, [])
-
     function HandleHover(id){
         setDisplay(id);
     }
 
     useEffect(()=>{
-        Aos.init({ duration: 700 })
+        Aos.init({ duration: 700, disable: window.screen.width < 640 })
     }, [])
 
     return(
@@ -167,7 +158,7 @@ export default function About(){
                 })}
             </HoverDiv>
             {/*data-aos={(@media only screen and (max-width: 630)) ? "" : "fade-left"}*/}
-            <SideDiv data-aos={sideTransition}>
+            <SideDiv data-aos="fade-left">
                 {QualityData && QualityData.map((quality, key)=>{
                     return(
                         <div key={key}>
