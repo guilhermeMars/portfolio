@@ -1,3 +1,4 @@
+import React from "react"
 import styled from "styled-components";
 import Image from "next/image";
 import QualityData from "../quality.json";
@@ -127,13 +128,14 @@ export default function About(){
 
     const [display, setDisplay] = useState();
 
-    function handleWidth() {
-            if(window.screen.width > 630){
-                return "fade-left";
-            } else{
-                return undefined;
-            }
-    }
+    const [sideTransition, setSideTransition] = useState();
+
+    useEffect(()=>{
+        if (typeof window !== 'undefined') {
+            if(window.screen.width > 640) setSideTransition("fade-left");
+            else setSideTransition(undefined);
+        }
+    }, [])
 
     function HandleHover(id){
         setDisplay(id);
@@ -165,7 +167,7 @@ export default function About(){
                 })}
             </HoverDiv>
             {/*data-aos={(@media only screen and (max-width: 630)) ? "" : "fade-left"}*/}
-            <SideDiv data-aos={(typeof window !== "undefined") && (window.screen.width > 640) ? "fade-left" : undefined}>
+            <SideDiv data-aos={sideTransition}>
                 {QualityData && QualityData.map((quality, key)=>{
                     return(
                         <div key={key}>
