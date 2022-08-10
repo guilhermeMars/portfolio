@@ -137,7 +137,7 @@ export default function About(){
     }
 
     useEffect(()=>{
-        Aos.init({ duration: 700, disable: window.screen.width < 640 })
+        Aos.init({ duration: 700 })
     }, [])
 
     return(
@@ -161,7 +161,7 @@ export default function About(){
                     )
                 })}
             </HoverDiv>
-            <SideDiv data-aos="fade-left">
+            <SideDiv data-aos="fade">
                 {QualityData && QualityData.map((quality, key)=>{
                     return(
                         <div key={key}>
