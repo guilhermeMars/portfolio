@@ -37,7 +37,7 @@
     },
     {
         "id": 5,
-        "src": "/progresso.png",
+        "src": "/progresso.webp",
         "title": "Projetos Futuros",
         "description": "Uma área dedicada para cursos futuros :)",
         "link": "",
@@ -46,7 +46,7 @@
     },
     {
         "id": 6,
-        "src": "/progresso.png",
+        "src": "/progresso.webp",
         "title": "Projetos Futuros",
         "description": "Uma área dedicada para cursos futuros :)",
         "link": "",

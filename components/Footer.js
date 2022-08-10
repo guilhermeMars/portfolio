@@ -51,10 +51,10 @@ export default function Footer(){
             </div>
             <ImageDiv>
                 <StyledImg href="https://www.linkedin.com/in/guilherme-martins-216a43207/" target="_blank" rel="noreferrer">
-                    <Image src="/Linkedin.png" alt="Linkedin" width="200px" height="200px" />
+                    <Image src="/Linkedin.webp" alt="Linkedin" width="200px" height="200px" />
                 </StyledImg>
                 <StyledImg href="https://github.com/guilhermeMars" target="_blank" rel="noreferrer">
-                    <Image src="/Github.png" alt="Github" width="200px" height="200px" />
+                    <Image src="/Github.webp" alt="Github" width="200px" height="200px" />
                 </StyledImg>
             </ImageDiv>
         </Main>

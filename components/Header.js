@@ -181,9 +181,9 @@ export default function Header() {
       </StyledNavBar>
     )}
     <Main>
-      <StyledMenu src="/Menu.png" alt="Menu" onClick={handleMenu}/>
+      <StyledMenu src="/Menu.webp" alt="Menu" onClick={handleMenu}/>
       <Logo>
-        <StyledImg src="marsLogo.png" alt="Guilherme Mars Logo" />
+        <StyledImg src="marsLogo.webp" alt="Guilherme Mars Logo" />
         <Name>GuilhermeMars</Name>
       </Logo>
       <Nav>

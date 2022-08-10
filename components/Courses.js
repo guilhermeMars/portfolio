@@ -64,6 +64,10 @@ const TopCard = styled.i`
         border-radius: 20px 0 0 20px;
         z-index: 2;
     }
+    @media only screen and (max-width: 600px) {
+        top: 30px;
+        left: -14px;
+    }
 `;
 
 const BlockDiv = styled.div`
@@ -95,6 +99,9 @@ const HoverDiv = styled.div`
 const StyledH4 = styled.h4`
     font-size: 35px;
     margin: 0;
+    @media only screen and (max-width: 600px) {
+        font-size: 31px;
+    }
 `;
 
 const StyledP = styled.p`
@@ -172,10 +179,10 @@ export default function Course(){
             </FlexCourse>
             <Centralization>
                 {totalImg > nextImg &&
-                    <StyledButton onClick={handleMoreImage}>Ver mais <img src="/Arrow.png" /></StyledButton>
+                    <StyledButton onClick={handleMoreImage}>Ver mais <img src="/Arrow.webp" /></StyledButton>
                 }
                 {totalImg <= nextImg &&
-                    <StyledButton onClick={handleLessImage}>Ver menos <img src="/Arrow.png" style={{ transform: "rotate(180deg)" }}/></StyledButton>
+                    <StyledButton onClick={handleLessImage}>Ver menos <img src="/Arrow.webp" style={{ transform: "rotate(180deg)" }}/></StyledButton>
                 }
             </Centralization>
         </Main>

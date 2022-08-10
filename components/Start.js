@@ -61,6 +61,8 @@ const StyledMainImage = styled.div`
   text-align: center;
   margin: auto;
   width: 500px;
+  border-radius: 100px;
+  overflow: hidden;
   @media only screen and (max-width: 600px) {
     width: 350px;
     margin: 60px auto;
@@ -134,7 +136,7 @@ export default function Start() {
       <FlexMainImage>
         <StyledMainImage>
           <Image
-            src="/test.png"
+            src="/perfil.webp"
             alt="Minha foto"
             id="photo"
             width="600px"
@@ -146,24 +148,24 @@ export default function Start() {
       <SocialFlex>
         <SocialMedia data-aos="fade-left">
           <SocialImage href="https://www.linkedin.com/in/guilherme-martins-216a43207/" target="_blank" rel="noreferrer">
-            <Image src="/Linkedin.png" alt="Linkedin" width="200px" height="200px" />
+            <Image src="/Linkedin.webp" alt="Linkedin" width="200px" height="200px" />
           </SocialImage>
           <SocialImage href="https://github.com/guilhermeMars" target="_blank" rel="noreferrer">
-            <Image src="/Github.png" alt="Github" width="200px" height="200px" />
+            <Image src="/Github.webp" alt="Github" width="200px" height="200px" />
           </SocialImage>
           <SocialImage href="https://www.instagram.com/stars_fade/" target="_blank" rel="noreferrer">
             <Image
-              src="/Instagram.png"
+              src="/Instagram.webp"
               alt="Instagram"
               width="200px"
               height="200px"
             />
           </SocialImage>
           <SocialImage href="https://twitter.com/Stars_Fadee" target="_blank" rel="noreferrer">
-            <Image src="/Twitter.png" alt="Twitter" width="200px" height="200px" />
+            <Image src="/Twitter.webp" alt="Twitter" width="200px" height="200px" />
           </SocialImage>
           <SocialImage>
-            <Image src="/Gmail.png" alt="Gmail" width="280px" height="210px" onClick={()=> (displayText == false) ? setDisplayText(true) : setDisplayText(false)} />
+            <Image src="/Gmail.webp" alt="Gmail" width="280px" height="210px" onClick={()=> (displayText == false) ? setDisplayText(true) : setDisplayText(false)} />
           </SocialImage>
             {displayText && <StyledEmail>guilhermemspiandorin@gmail.com</StyledEmail> }
         </SocialMedia>

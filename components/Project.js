@@ -58,7 +58,7 @@ const StyledH4 = styled.h4`
 `;
 
 const StyledP = styled.p`
-    font-size: 18px;
+    font-size: 16px;
 `;
 
 const Centralization = styled.div`
@@ -127,10 +127,10 @@ export default function Project(){
             </FlexProject>
             <Centralization>
                 {totalImg > nextImg &&
-                    <StyledButton onClick={handleMoreImage}>Ver mais <img src="/Arrow.png" /></StyledButton>
+                    <StyledButton onClick={handleMoreImage}>Ver mais <img src="/Arrow.webp" /></StyledButton>
                 }
                 {totalImg <= nextImg &&
-                    <StyledButton onClick={handleLessImage}>Ver menos <img src="/Arrow.png" style={{ transform: "rotate(180deg)" }} /></StyledButton>
+                    <StyledButton onClick={handleLessImage}>Ver menos <img src="/Arrow.webp" style={{ transform: "rotate(180deg)" }} /></StyledButton>
                 }
             </Centralization>
         </Main>
