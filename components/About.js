@@ -161,7 +161,6 @@ export default function About(){
                     )
                 })}
             </HoverDiv>
-            {/*data-aos={(@media only screen and (max-width: 630)) ? "" : "fade-left"}*/}
             <SideDiv data-aos="fade-left">
                 {QualityData && QualityData.map((quality, key)=>{
                     return(
