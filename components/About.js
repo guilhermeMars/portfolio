@@ -42,7 +42,7 @@ const Quality = styled.a`
     border-radius: 5px;
     width: 200px;
     height: 280px;
-    padding: 20px 15px;
+    padding: 20px 10px;
     margin: 20px;
     transition: 0.3s;
     cursor: pointer;
@@ -116,6 +116,10 @@ const SmallDash = styled.div`
 const StyledUl = styled.ul`
     margin-top: 30px;
     font-size: 25px;
+    li{
+        margin: 10px 0;
+        font-weight: 400;
+    }
     @media only screen and (max-width: 630px) {
         font-size: 20px;
         li {
@@ -175,7 +179,8 @@ export default function About(){
                                             <li>{particular.l1}</li>
                                             <li>{particular.l2}</li>
                                             <li>{particular.l3}</li>
-                                            <li>{particular.l4}</li>
+                                            {(particular.l4 !== undefined) && <li>{particular.l4}</li>}
+                                            {(particular.l5 !== undefined) && <li>{particular.l5}</li>}
                                         </StyledUl>
                                     )
                                 })}

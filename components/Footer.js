@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const Main = styled.footer`
     width: 100%;
+    padding: 5px;
     background-color: #604D80;
     display: flex;
     flex-wrap: wrap;
@@ -30,10 +31,15 @@ const StyledA = styled(StyledP).attrs({
 const ImageDiv = styled.div`
     display: flex;
     align-items: center;
+    height: 100%;
 `
 
 const StyledImg = styled.a`
-    width: 80px;
+    width: 70px;
+    transition: 0.25s;
+    :hover{
+        width: 75px;
+    }
 `;
 
 export default function Footer(){

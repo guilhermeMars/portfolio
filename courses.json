@@ -3,7 +3,8 @@
         "id": 1,
         "src": "/certificadoReact.webp",
         "title": "Formação React",
-        "description": "Lorem ipsum dolor sit amet. Qui quia inventore aut eveniet tempora sit cupiditate aliquam sit asperiores voluptatem et consequatur illum?",
+        "description": "Foram 9 cursos feitos ao todo com 338 atividades finalizadas. Indo desde a orientação a objetos até blogs com rotas dinâmicas",
+        "link": "https://cursos.alura.com.br/degree/certificate/4ff0f6bd-ee0b-49f0-be8c-07e867fe1813",
         "topCard": "Alura",
         "topColor": ""
     },
@@ -11,7 +12,8 @@
         "id": 2,
         "src": "/cursoInformatica.webp",
         "title": "Técnico em Informática",
-        "description": "Lorem ipsum dolor sit amet. Qui quia inventore aut eveniet tempora sit cupiditate aliquam sit asperiores voluptatem et consequatur illum?",
+        "description": "Técnico com médio em informática com duração de 3 anos letivos. Abrangendo do básico da programação, banco de dados, marketing/ publicidade, web e entre outros...",
+        "link": "http://www.bentoquirino.com.br/novo/",
         "topCard": "",
         "topColor": ""
     },
@@ -19,7 +21,8 @@
         "id": 3,
         "src": "/inglêsParaDevs.webp",
         "title": "Inglês para Dev's",
-        "description": "Lorem ipsum dolor sit amet. Qui quia inventore aut eveniet tempora sit cupiditate aliquam sit asperiores voluptatem et consequatur illum?",
+        "description": "Curso de inglês indo do básico ao avançado da gramática e conversasão. Tendo no final do uma parte específica para Dev's e entrevistas no exterior",
+        "link": "https://cursos.aluralingua.com.br/user/guilhermemspiandorin",
         "topCard": "Em progresso",
         "topColor": "#F5EF3B"
     },
@@ -27,23 +30,26 @@
         "id": 4,
         "src": "/cursoNodeJs.webp",
         "title": "Node Js",
-        "description": "Lorem ipsum dolor sit amet. Qui quia inventore aut eveniet tempora sit cupiditate aliquam sit asperiores voluptatem et consequatur illum?",
+        "description": "Curso de Node.js com Express focado no back-end, ainda bem no início do curso.",
+        "link": "https://www.alura.com.br/formacao-node-js-express",
         "topCard": "Em progresso",
         "topColor": ""
     },
     {
         "id": 5,
-        "src": "/test gray.png",
-        "title": "Lorem",
-        "description": "Lorem ipsum dolor sit amet. Qui quia inventore aut eveniet tempora sit cupiditate aliquam sit asperiores voluptatem et consequatur illum?",
+        "src": "/progresso.png",
+        "title": "Projetos Futuros",
+        "description": "Uma área dedicada para cursos futuros :)",
+        "link": "",
         "topCard": "",
         "topColor": ""
     },
     {
         "id": 6,
-        "src": "/test gray.png",
-        "title": "Lorem",
-        "description": "Lorem ipsum dolor sit amet. Qui quia inventore aut eveniet tempora sit cupiditate aliquam sit asperiores voluptatem et consequatur illum?",
+        "src": "/progresso.png",
+        "title": "Projetos Futuros",
+        "description": "Uma área dedicada para cursos futuros :)",
+        "link": "",
         "topCard": "",
         "topColor": ""
     }

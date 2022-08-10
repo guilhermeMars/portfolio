@@ -3,42 +3,42 @@
         "id": 1,
         "src": "/las-cio.webp",
         "title": "Las-cio Freelance",
-        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur.",
+        "description": "Primeiro projeto em Next.js feito profissionalmente para uma empresa. Fiz todo o site, hospedagem com domínio, as contas do Instagram e Facebook e os 6 primeiros post's. ",
         "link": "https://www.las-cio.com"
     },
     {
         "id": 2,
         "src": "/Tcc-Tumb.webp",
         "title": "DotX - TCC",
-        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur.",
+        "description": "Meu trabalho de conclusão de curso no Colégio politécnico Bento Quirino. Foi criado um site para uma despachante com chatbot, cadastro, login e compra com Qr code",
         "link": "https://www.youtube.com/watch?v=-BEkblWzyVQ"
     },
     {
         "id": 3,
         "src": "/projetoHelloUser.webp",
-        "title": "Hello User - Projeto React",
-        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur.",
+        "title": "Hello User - React",
+        "description": "Um projeto pessoal feito após terminar a formação React, com o intuito de aplicar meus conhecimentos e servir como portfólio.",
         "link": "https://hello-user-portfolio.vercel.app"
     },
     {
         "id": 4,
-        "src": "/test gray.png",
-        "title": "Lorem",
-        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur.",
+        "src": "/progresso.png",
+        "title": "Projetos Futuros",
+        "description": "Uma área dedicada para projetos futuros :)",
         "link": ""
     },
     {
         "id": 5,
-        "src": "/test gray.png",
-        "title": "Lorem",
-        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur.",
+        "src": "/progresso.png",
+        "title": "Projetos Futuros",
+        "description": "Uma área dedicada para projetos futuros :)",
         "link": ""
     },
     {
         "id": 6,
-        "src": "/test gray.png",
-        "title": "Lorem",
-        "description": "Lorem ipsum dolor sit amet. Et dolor consequatur ut unde asperiores ut enim rerum vel ipsa nostrum vel unde atque est quidem officiis et impedit consequatur.",
+        "src": "/progresso.png",
+        "title": "Projetos Futuros",
+        "description": "Uma área dedicada para projetos futuros :)",
         "link": ""
     }
 ]

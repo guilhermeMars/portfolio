@@ -149,10 +149,19 @@ export default function Course(){
                                 width="640"
                                 height="360"
                                 />
-                            <HoverDiv>
-                                <StyledH4>{course.title}</StyledH4>
-                                <StyledP>{course.description}</StyledP>
-                            </HoverDiv>
+                            {(course.link !== "") ? (
+                                <a href={course.link} target="_blank" rel="noreferrer">
+                                    <HoverDiv>
+                                        <StyledH4>{course.title}</StyledH4>
+                                        <StyledP>{course.description}</StyledP>
+                                    </HoverDiv>
+                                </a>
+                            ) : (
+                                <HoverDiv>
+                                    <StyledH4>{course.title}</StyledH4>
+                                    <StyledP>{course.description}</StyledP>
+                                </HoverDiv>
+                            )}
                         </CourseDivs>
                         {course.topCard !== "" &&
                             <TopCard>{course.topCard}<BlockDiv/></TopCard>

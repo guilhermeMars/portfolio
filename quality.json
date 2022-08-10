@@ -2,70 +2,70 @@
     {
         "id": 1,
         "title": "Hard Skill's",
-        "content": "Lorem ipsum dolor sit amet. Aut voluptate odio id ",
+        "content": "Conhecimentos técnicos e técnologias que utilizo",
         "src": "/HardSkill.svg",
         "color": "#11C518",
         "particular": [{
-            "l1": "Lorem ipsum dolor sit amet. Eum quis nihil et fugit culpa aut",
-            "l2": "totam laboriosam est libero quasi aut harum ipsam. Et quia voluptatem",
-            "l3": "iste et nesciunt sint id exercitationem dolores. Qui magnam",
-            "l4": "inventore sed blanditiis perferendis ut laboriosam"
+            "l1": "Domínio em React e Next",
+            "l2": "Utilização de bibliotecas externas, como styled components",
+            "l3": "Criação de sites dinâmicos, que recebem dados de uma API",
+            "l4": "Otimização de imagens e SEO",
+            "l5": "Inglês Intermediário"
         }
         ]
     },
     {
         "id": 2,
         "title": "Formação",
-        "content": "Lorem ipsum dolor sit amet. Aut voluptate odio id ",
+        "content": "Formação profissional, certificados e cursos",
         "src": "/Formacao.svg",
         "color": "#5D6DFF",
         "particular": [{
-            "l1": "Lorem ipsum dolor sit amet. Eum quis nihil et fugit culpa aut",
-            "l2": "totam laboriosam est libero quasi aut harum ipsam. Et quia voluptatem",
-            "l3": "iste et nesciunt sint id exercitationem dolores. Qui magnam",
-            "l4": "inventore sed blanditiis perferendis ut laboriosam"
+            "l1": "Técnico em informática no colégio poli-técnico Bento Quirino",
+            "l2": "Após isso estudando online pela Alura...",
+            "l3": "Alura - Formação React"
         }
         ]
     },
     {
         "id": 3,
         "title": "Objetivos",
-        "content": "Lorem ipsum dolor sit amet. Aut voluptate odio id ",
+        "content": "O que pretendo atingir atualmente como profissional",
         "src": "/Objetivos.svg",
         "color": "#FF4D34",
         "particular": [{
-            "l1": "Lorem ipsum dolor sit amet. Eum quis nihil et fugit culpa aut",
-            "l2": "totam laboriosam est libero quasi aut harum ipsam. Et quia voluptatem",
-            "l3": "iste et nesciunt sint id exercitationem dolores. Qui magnam",
-            "l4": "inventore sed blanditiis perferendis ut laboriosam"
+            "l1": "Conseguir um emprego e adquirir experiência profissional",
+            "l2": "Sempre expandir meus conhecimentos, através de cursos e, principalmente, da prática",
+            "l3": "Aumentar minha rede de contatos e amizades no meio",
+            "l4": "Nunca ficar estagnado"
         }
         ]
     },
     {
         "id": 4,
         "title": "Noções",
-        "content": "Lorem ipsum dolor sit amet. Aut voluptate odio id ",
+        "content": "Possuo conhecimento sobre, mas não é minha área de atuação",
         "src": "/Nocoes.svg",
         "color": "#E9A800",
         "particular": [{
-            "l1": "Lorem ipsum dolor sit amet. Eum quis nihil et fugit culpa aut",
-            "l2": "totam laboriosam est libero quasi aut harum ipsam. Et quia voluptatem",
-            "l3": "iste et nesciunt sint id exercitationem dolores. Qui magnam",
-            "l4": "inventore sed blanditiis perferendis ut laboriosam"
+            "l1": "Experiência com figma e Ux",
+            "l2": "Conhecimento razoável em edição de imagens e intermediário em edição de vídeos",
+            "l3": "Bom conhecimento em design",
+            "l4": "Estudos iniciados sobre back-end"
         }
         ]
     },
     {
         "id": 5,
         "title": "Soft Skill's",
-        "content": "Lorem ipsum dolor sit amet. Aut voluptate odio id ",
+        "content": "Comportamento profissional e minha personalidade",
         "src": "/SoftSkill.svg",
         "color": "#FF37F7",
         "particular": [{
-            "l1": "Lorem ipsum dolor sit amet. Eum quis nihil et fugit culpa aut",
-            "l2": "totam laboriosam est libero quasi aut harum ipsam. Et quia voluptatem",
-            "l3": "iste et nesciunt sint id exercitationem dolores. Qui magnam",
-            "l4": "inventore sed blanditiis perferendis ut laboriosam"
+            "l1": "Muito proativo e autossuficiente",
+            "l2": "Bom liderando e trabalhando em grupo no geral",
+            "l3": "Bom controle emocional",
+            "l4": "Extrovertido e com facilidade em me comunicar"
         }
         ]
     }
