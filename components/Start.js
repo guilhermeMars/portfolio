@@ -86,10 +86,10 @@ const SocialMedia = styled.div`
   margin: 0 30px;
   background-color: white;
   border-radius: 10px;
-  @media only screen and (max-width: 430px) {
-    min-width: 0;
-    width: 300px;
+  @media only screen and (max-width: 500px) {
     margin: auto;
+    min-width: 400px;
+    max-width: 400px;
     padding: 0;
   }
 `;
@@ -101,9 +101,6 @@ const SocialImage = styled.a`
   :hover{
     width: 150px;
     cursor: pointer;
-  }
-  @media only screen and (max-width: 430px) {
-    width: 120px;;
   }
 `;
 

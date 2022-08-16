@@ -72,6 +72,7 @@ const Description = styled.p`
 
 const SideDiv = styled.div`
     background-color: white;
+    overflow-x: hidden;
     border-radius: 30px;
     width: 600px;
     height: 600px;
@@ -137,7 +138,7 @@ export default function About(){
     }
 
     useEffect(()=>{
-        Aos.init({ duration: 700 })
+        Aos.init({ duration: 700, disable: 'mobile' })
     }, [])
 
     return(
@@ -146,7 +147,7 @@ export default function About(){
             <HoverDiv data-aos="fade-right">
                 {QualityData && QualityData.map( quality =>{
                 return(
-                    <Quality key={quality.id} onMouseEnter={_=>HandleHover(quality.id)}>
+                    <Quality key={quality.id} onMouseEnter={_=>HandleHover(quality.id)} href="#side">
                         <ImageAlign>
                             <Image
                                 src={quality.src}
@@ -161,7 +162,7 @@ export default function About(){
                     )
                 })}
             </HoverDiv>
-            <SideDiv data-aos="fade">
+            <SideDiv data-aos="fade-left" id="side">
                 {QualityData && QualityData.map((quality, key)=>{
                     return(
                         <div key={key}>
