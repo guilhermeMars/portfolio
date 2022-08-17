@@ -167,7 +167,7 @@ export default function About(){
                     return(
                         <div key={key}>
                         {(display == undefined) ?
-                            <StyledH2 style={{ marginBottom: "300px", textDecoration: "underline" }}>Escolha um tema</StyledH2>
+                            <StyledH2 style={{ marginBottom: "400px", textDecoration: "underline" }}>Escolha um tema</StyledH2>
                          : display == quality.id && (
                             <div style={{ animationName: `slideLeft`, animationDuration: '600ms'  }}>
                                 <StyledH2 style={ {color: quality.color} }>{quality.title}</StyledH2>
