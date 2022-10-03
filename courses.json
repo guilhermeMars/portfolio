@@ -10,6 +10,15 @@
     },
     {
         "id": 2,
+        "src": "/Formacao-Python.webp",
+        "title": "Formação Python",
+        "description": "Foram 9 cursos feitos ao todo com 496 atividades finalizadas. Fui desde orientação a objetos até testes, formatação de strings de diferentes formas, os tipos de lista, tupla, dictionary e conjuntos",
+        "link": "https://cursos.alura.com.br/user/guilhermemars/degree-Python-linguagem-162571/certificate",
+        "topCard": "Alura",
+        "topColor": ""
+    },
+    {
+        "id": 3,
         "src": "/cursoInformatica.webp",
         "title": "Técnico em Informática",
         "description": "Técnico com médio em informática com duração de 3 anos letivos. Abrangendo do básico da programação, banco de dados, marketing/ publicidade, web e entre outros...",
@@ -18,7 +27,7 @@
         "topColor": ""
     },
     {
-        "id": 3,
+        "id": 4,
         "src": "/inglêsParaDevs.webp",
         "title": "Inglês para Dev's",
         "description": "Curso de inglês indo do básico ao avançado da gramática e conversação. Tendo no final do uma parte específica para Dev's e entrevistas no exterior",
@@ -27,21 +36,12 @@
         "topColor": "#F5EF3B"
     },
     {
-        "id": 4,
+        "id": 5,
         "src": "/cursoNodeJs.webp",
         "title": "Node Js",
         "description": "Curso de Node.js com Express focado no back-end, ainda bem no início do curso.",
         "link": "https://www.alura.com.br/formacao-node-js-express",
         "topCard": "Em progresso",
-        "topColor": ""
-    },
-    {
-        "id": 5,
-        "src": "/progresso.webp",
-        "title": "Projetos Futuros",
-        "description": "Uma área dedicada para cursos futuros :)",
-        "link": "",
-        "topCard": "",
         "topColor": ""
     },
     {
