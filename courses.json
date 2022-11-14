@@ -10,11 +10,11 @@
     },
     {
         "id": 2,
-        "src": "/Formacao-Python.webp",
-        "title": "Formação Python",
-        "description": "Foram 9 cursos feitos ao todo com 496 atividades finalizadas. Fui desde orientação a objetos até testes, formatação de strings de diferentes formas, os tipos de lista, tupla, dictionary e conjuntos",
-        "link": "https://cursos.alura.com.br/user/guilhermemars/degree-Python-linguagem-162571/certificate",
-        "topCard": "Alura",
+        "src": "/Formação-Node.webp",
+        "title": "Node Js",
+        "description": "Minha principal linguagem para back-end atualmente, pretendo aplica-la junto com React em projetos futuros. Foram 6 cursos feitos ao todo com 370 atividades finalizadas.",
+        "link": "https://cursos.alura.com.br/user/guilhermemars/degree-node-js-express-93110/certificate",
+        "topCard": "Em progresso",
         "topColor": ""
     },
     {
@@ -28,21 +28,21 @@
     },
     {
         "id": 4,
+        "src": "/Formacao-Python.webp",
+        "title": "Formação Python",
+        "description": "Foram 9 cursos feitos ao todo com 496 atividades finalizadas. Fui desde orientação a objetos até testes, formatação de strings de diferentes formas, os tipos de lista, tupla, dictionary e conjuntos",
+        "link": "https://cursos.alura.com.br/user/guilhermemars/degree-Python-linguagem-162571/certificate",
+        "topCard": "Alura",
+        "topColor": ""
+    },
+    {
+        "id": 5,
         "src": "/inglêsParaDevs.webp",
         "title": "Inglês para Dev's",
         "description": "Curso de inglês indo do básico ao avançado da gramática e conversação. Tendo no final do uma parte específica para Dev's e entrevistas no exterior",
         "link": "https://cursos.aluralingua.com.br/user/guilhermemspiandorin",
         "topCard": "Em progresso",
         "topColor": "#F5EF3B"
-    },
-    {
-        "id": 5,
-        "src": "/cursoNodeJs.webp",
-        "title": "Node Js",
-        "description": "Curso de Node.js com Express focado no back-end, ainda bem no início do curso.",
-        "link": "https://www.alura.com.br/formacao-node-js-express",
-        "topCard": "Em progresso",
-        "topColor": ""
     },
     {
         "id": 6,
