@@ -150,7 +150,7 @@ export default function Start() {
           <SocialImage href="https://github.com/guilhermeMars" target="_blank" rel="noreferrer">
             <Image src="/Github.webp" alt="Github" width="200px" height="200px" />
           </SocialImage>
-          <SocialImage href="https://www.instagram.com/stars_fade/" target="_blank" rel="noreferrer">
+          <SocialImage href="https://www.instagram.com/guilhermem4rs/" target="_blank" rel="noreferrer">
             <Image
               src="/Instagram.webp"
               alt="Instagram"
@@ -158,7 +158,7 @@ export default function Start() {
               height="200px"
             />
           </SocialImage>
-          <SocialImage href="https://twitter.com/Stars_Fadee" target="_blank" rel="noreferrer">
+          <SocialImage href="https://twitter.com/GuilhermeM4rs" target="_blank" rel="noreferrer">
             <Image src="/Twitter.webp" alt="Twitter" width="200px" height="200px" />
           </SocialImage>
           <SocialImage>
