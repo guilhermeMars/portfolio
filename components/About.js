@@ -152,8 +152,8 @@ export default function About(){
                             <Image
                                 src={quality.src}
                                 alt={quality.title}
-                                width="100px"
-                                height="100px"
+                                width="100"
+                                height="100"
                             />
                         </ImageAlign>
                         <StyledH3 style={ {color: quality.color} }>{quality.title}</StyledH3>
@@ -173,7 +173,29 @@ export default function About(){
                                 <StyledH2 style={ {color: quality.color} }>{quality.title}</StyledH2>
                                 <BigDash style={ {backgroundColor: quality.color} }/>
                                 <SmallDash style={ {backgroundColor: quality.color} }/>
-                                {quality.particular && quality.particular.map((particular, key)=>{
+                                {(quality.title == "Trabalho" || quality.title == "Formação") ? 
+                                quality.particular && quality.particular.map((particular, key)=>{
+                                    return(
+                                        <StyledUl key={key}>
+                                            <li><strong>{particular.l1}</strong></li>
+                                            <ul>
+                                                <li>{particular.s1}</li>
+                                            </ul>
+                                            <li><strong>{particular.l2}</strong></li>
+                                            <ul>
+                                                <li>{particular.s2}</li>
+                                            </ul>
+                                            <li><strong>{particular.l3}</strong></li>
+                                            <ul>
+                                                <li>{particular.s3}</li>
+                                            </ul>
+                                            {(particular.l4 !== undefined) && <li>{particular.l4}</li>}
+                                            {(particular.l5 !== undefined) && <li>{particular.l5}</li>}
+                                        </StyledUl>
+                                    )
+                                })
+                                :
+                                quality.particular && quality.particular.map((particular, key)=>{
                                     return(
                                         <StyledUl key={key}>
                                             <li>{particular.l1}</li>

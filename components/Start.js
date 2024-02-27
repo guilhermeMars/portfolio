@@ -126,7 +126,7 @@ export default function Start() {
     <Main>
       <Presentation data-aos="fade-right">
         <StyledH2>Guilherme Martins Spiandorin</StyledH2>
-        <StyledH1>Desenvolvedor Web Front-end</StyledH1>
+        <StyledH1>Desenvolvedor Web Full-stack</StyledH1>
         <StyledP>Júnior - Valinhos, Sp - Remoto/Híbrido</StyledP>
       </Presentation>
       
@@ -136,8 +136,8 @@ export default function Start() {
             src="/perfil.webp"
             alt="Minha foto"
             id="photo"
-            width="600px"
-            height="600px"
+            width="600"
+            height="600"
           />
         </StyledMainImage>
       </FlexMainImage>
@@ -145,24 +145,24 @@ export default function Start() {
       <SocialFlex>
         <SocialMedia data-aos="fade-left">
           <SocialImage href="https://www.linkedin.com/in/guilherme-martins-216a43207/" target="_blank" rel="noreferrer">
-            <Image src="/Linkedin.webp" alt="Linkedin" width="200px" height="200px" />
+            <Image src="/Linkedin.webp" alt="Linkedin" width="140" height="140" />
           </SocialImage>
           <SocialImage href="https://github.com/guilhermeMars" target="_blank" rel="noreferrer">
-            <Image src="/Github.webp" alt="Github" width="200px" height="200px" />
+            <Image src="/Github.webp" alt="Github" width="140" height="140" />
           </SocialImage>
           <SocialImage href="https://www.instagram.com/guilhermem4rs/" target="_blank" rel="noreferrer">
             <Image
               src="/Instagram.webp"
               alt="Instagram"
-              width="200px"
-              height="200px"
+              width="140"
+              height="140"
             />
           </SocialImage>
           <SocialImage href="https://twitter.com/GuilhermeM4rs" target="_blank" rel="noreferrer">
-            <Image src="/Twitter.webp" alt="Twitter" width="200px" height="200px" />
+            <Image src="/Twitter.webp" alt="Twitter" width="140" height="140" />
           </SocialImage>
           <SocialImage>
-            <Image src="/Gmail.webp" alt="Gmail" width="280px" height="210px" onClick={()=> (displayText == false) ? setDisplayText(true) : setDisplayText(false)} />
+            <Image src="/Gmail.webp" alt="Gmail" width="140" height="105" onClick={()=> (displayText == false) ? setDisplayText(true) : setDisplayText(false)} />
           </SocialImage>
             {displayText && <StyledEmail>guilhermemspiandorin@gmail.com</StyledEmail> }
         </SocialMedia>

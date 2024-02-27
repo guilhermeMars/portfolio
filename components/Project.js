@@ -105,8 +105,8 @@ export default function Project(){
                             <Image
                                 src={project.src}
                                 alt={project.title}
-                                width="640"
-                                height="360"
+                                width="426"
+                                height="240"
                             />
                             {(project.link != "") ? 
                             <a href={project.link} target="_blank" rel="noreferrer">

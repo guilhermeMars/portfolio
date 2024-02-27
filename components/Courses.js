@@ -153,8 +153,8 @@ export default function Course(){
                             <Image
                                 src={course.src}
                                 alt={course.title}
-                                width="640"
-                                height="360"
+                                width="426"
+                                height="240"
                                 />
                             {(course.link !== "") ? (
                                 <a href={course.link} target="_blank" rel="noreferrer">
