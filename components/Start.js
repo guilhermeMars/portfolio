@@ -136,8 +136,8 @@ export default function Start() {
             src="/perfil.webp"
             alt="Minha foto"
             id="photo"
-            width="600"
-            height="600"
+            width="500"
+            height="500"
           />
         </StyledMainImage>
       </FlexMainImage>
