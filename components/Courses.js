@@ -56,7 +56,7 @@ const TopCard = styled.i`
     ::before{
         content: "";
         position: absolute;
-        top: 50px;
+        top: 0px;
         left: 0px;
         width: 15px;
         height: 30px;

@@ -33,7 +33,7 @@ const StyledContentBar = styled.a`
   border-radius: 5px;
   padding: 5px;
   cursor: pointer;
-  :hover{
+  &:hover{
     background-color: #C9A4DE;
   }
 `;
@@ -113,16 +113,16 @@ const StyledLi = styled.li`
     color: rgba(0, 0, 0, 0.8);
     z-index: 1;
     cursor: pointer;
-    :nth-child(1).active ~ ${Indicator}{
+    &:nth-child(1).active ~ ${Indicator}{
       transform: translateX(-8px);
     }
-    :nth-child(2).active ~ ${Indicator}{
+    &:nth-child(2).active ~ ${Indicator}{
       transform: translateX(95px);
     }
-    :nth-child(3).active ~ ${Indicator}{
+    &:nth-child(3).active ~ ${Indicator}{
       transform: translateX(212px);
     }
-    :nth-child(4).active ~ ${Indicator}{
+    &:nth-child(4).active ~ ${Indicator}{
       transform: translateX(333px);
     }
   `;

@@ -46,14 +46,14 @@ const Quality = styled.a`
     margin: 20px;
     transition: 0.3s;
     cursor: pointer;
-    :hover{
+    &:hover{
         transform: translateY(-15px);
     }
 `;
 
 const ImageAlign = styled.div`
     text-align: center;
-`
+`;
 
 const StyledH3 = styled.h3`
     font-size: 30px;

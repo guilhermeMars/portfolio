@@ -23,7 +23,7 @@ const StyledA = styled(StyledP).attrs({
     border-radius: 3px;
     transition: 0.5s;
     cursor: pointer;
-    :hover{
+    &:hover{
         background-color: #4C3D66;
     }
 `
@@ -37,8 +37,8 @@ const ImageDiv = styled.div`
 const StyledImg = styled.a`
     width: 70px;
     transition: 0.25s;
-    :hover{
-        width: 75px;
+    &:hover{
+        transform: scale(1.06);
     }
 `;
 

@@ -97,9 +97,9 @@ const SocialMedia = styled.div`
 const SocialImage = styled.a`
   width: 140px;
   margin: 15px;
-  transition: width 0.2s;
-  :hover{
-    width: 150px;
+  transition: transform 0.2s;
+  &:hover{
+    transform: scale(1.06);
     cursor: pointer;
   }
 `;
